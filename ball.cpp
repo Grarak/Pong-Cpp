@@ -117,7 +117,6 @@ void Ball::reset(int screenWidth, int screenHeight)
 {
     position.x = screenWidth / 2;
     position.y = screenHeight / 2;
-    velocity.x = -4;
     velocity.y = 0;
     gameover = 0;
 }
