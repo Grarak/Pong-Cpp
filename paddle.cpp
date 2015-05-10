@@ -34,8 +34,8 @@ void Paddle::draw(sf::RenderWindow* window, int screenWidth, int screenHeight)
     if (position < 0) position = -position;
     if (position + length / 2 <= screenHeight / 2)
     {
-        if (moving == 1) offset += screenHeight / 100;
-        else if (moving == 2) offset -= screenHeight / 100;
+        if (moving == 1) offset -= screenHeight / 100;
+        else if (moving == 2) offset += screenHeight / 100;
     }
     else
     {
