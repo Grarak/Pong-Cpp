@@ -85,7 +85,8 @@ int Ball::touchedPaddle(Paddle* paddle)
     return position.y > paddle->getHeight() && position.y < paddle->getHeight() + paddle->getLength();
 }
 
-int Ball::getVelocityY(Paddle* paddle) {
+int Ball::getVelocityY(Paddle* paddle)
+{
     double hitboxes[5][2];
     for (int i = 0; i < 5; i++)
     {
